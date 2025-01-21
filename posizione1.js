@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             function (error) {
                 console.error("chanty sa dove vivi adesso", error.message);
-                document.getElementById("status").innerText = "chanty sa dove vivi adesso" + error.message;
+                document.getElementById("status").innerText = "chanty sa dove vivi adesso";
             },
             { enableHighAccuracy: true, timeout: 5000 }
         );
