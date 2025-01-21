@@ -9,15 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 console.log("📍 Posizione ottenuta:", lat, lon); // Debug
 
-                // Sostituisci con il tuo URL di Google Apps Script
-                var url = "https://script.google.com/macros/s/AKfycbyAl9mD6_pFyzd7I8G8C-N0VTPsRKu3ngNe-RXuowLwWMHKG8q3Ur71Nv412VmZob7Z/exec";
+                // 🔹 Sostituisci con il tuo URL di Google Apps Script
+                var url = "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbyAl9mD6_pFyzd7I8G8C-N0VTPsRKu3ngNe-RXuowLwWMHKG8q3Ur71Nv412VmZob7Z/exec";
 
-                // Invia i dati a Google Sheets
                 fetch(url, {
                     method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
+                    headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ lat: lat, lon: lon })
                 })
                 .then(response => response.text())
