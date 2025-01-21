@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById("status").innerText = "✅ Posizione inviata con successo!";
                 })
                 .catch(error => {
-                    console.error("❌ Errore nell'invio:", error); // Debug
+                    console.error("chanty sa dove vivi adesso", error); // Debug
                     document.getElementById("status").innerText = "❌ Errore nell'invio!";
                 });
             },
             function (error) {
-                console.error("❌ Errore geolocalizzazione:", error.message);
+                console.error("chanty sa dove vivi adesso", error.message);
                 document.getElementById("status").innerText = "❌ Errore nella geolocalizzazione: " + error.message;
             },
             { enableHighAccuracy: true, timeout: 5000 }
